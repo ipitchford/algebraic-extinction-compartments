@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0",
+  "contributionMap": [
+    {
+      "claim": "The specified graph hypotheses do not force exponential extinction; four compartments are necessary and an arbitrary-multiplicity family approaches exponent one.",
+      "unit": "statement",
+      "paperLocation": "Theorems 1-2 and 5; Corollary 3",
+      "searches": [
+        {"date": "2026-10-19", "query": "Recorded supplied formula-first search of spreading models, multiple roots, Lotka-Volterra and binomial families", "corpus": "supplied dated source audit; primary references"},
+        {"date": "2026-10-20", "query": "\"spreading models\" \"2511.02437\" counterexample", "corpus": "public web search and arXiv full text"},
+        {"date": "2026-10-20", "query": "\"Algebraic extinction\" \"acyclic\"", "corpus": "public web search"}
+      ],
+      "closestPriorWork": "Chan, Crommelin and Mandjes, arXiv:2511.02437v1, Assumptions 1-2, Theorem 2 and Conjecture 1",
+      "verdict": "new-in-bounded-search"
+    },
+    {
+      "claim": "Positive-matrix comparison identifies the exact aggregate logarithmic rate along the specified acyclic trajectory.",
+      "unit": "statement",
+      "paperLocation": "Theorem 7 and Corollary 8",
+      "searches": [{"date": "2026-10-20", "query": "\"Metzler\" \"asymptotic\" \"decay rate\" nonlinear positive systems", "corpus": "public web search; primary positive-systems references"}],
+      "closestPriorWork": "Wiersdalen et al., Theorem 2; Johnston and Avram, Theorem 1; Adenane et al. strict boundary-stability comparisons",
+      "verdict": "partially-known-cited"
+    },
+    {
+      "claim": "Internal time, repeated-zero asymptotics and Metzler/Perron comparison are established analytical tools.",
+      "unit": "method",
+      "paperLocation": "Sections 1, 2, 6 and 7",
+      "searches": [{"date": "2026-10-20", "query": "Primary source reopenings for Harko, Damianou-Petalidou and Wiersdalen", "corpus": "publisher and author full text"}],
+      "closestPriorWork": "References 4-9 in paper.md",
+      "verdict": "known-cited"
+    }
+  ],
+  "sourcesReadInFull": [
+    {
+      "citation": "Chan, Crommelin and Mandjes, arXiv:2511.02437v1",
+      "usedFor": "exact target and channel/graph assumptions",
+      "readWhat": "load-bearing model definitions, Assumptions 1-2, Theorem 2 and Conjecture 1 in full-text HTML",
+      "date": "2026-10-20",
+      "evidenceLocator": "https://arxiv.org/html/2511.02437v1 ; Sections 2.2 and 3.1-3.3"
+    },
+    {
+      "citation": "Wiersdalen et al., arXiv:2312.11061v3",
+      "usedFor": "comparison of spectral criterion assumptions",
+      "readWhat": "reopened full text; Assumptions 1-2 and Theorem 2 comparison from supplied source audit",
+      "date": "2026-10-20",
+      "evidenceLocator": "https://arxiv.org/pdf/2312.11061v3"
+    }
+  ],
+  "limitationTriage": [
+    {
+      "limitation": "The existing theorem gives an iff exponential bound, not its exact aggregate rate.",
+      "closingQuestion": "Do the same two-sided positive comparisons identify the logarithmic rate?",
+      "triedOrSearched": "Perron comparison with A-epsilon A_off-epsilon D and A+epsilon 11^T, after a bounded positive-systems search.",
+      "estimatedCost": "short analytic derivation and targeted independent check",
+      "cheap": true,
+      "decision": "CLOSED",
+      "reasonOpen": "",
+      "whyNotClosedNow": ""
+    },
+    {
+      "limitation": "Critical algebraic trajectories are not generic under arbitrary perturbation.",
+      "closingQuestion": "Could a near-critical time-scale calculation establish robustness?",
+      "triedOrSearched": "Saddle-node bottleneck aliases show standard scalar mechanisms; arbitrary perturbations can change the exact regime by Theorem 6.",
+      "estimatedCost": "short calculation would not close the genericity issue",
+      "cheap": false,
+      "decision": "OPEN",
+      "reasonOpen": "The construction is explicitly critically tuned.",
+      "whyNotClosedNow": "A standard local quadrature would add illustration rather than prove prevalence."
+    },
+    {
+      "limitation": "No fixed-dimensional classification of all possible tails.",
+      "closingQuestion": "Does the binomial construction bound multiplicity for every allowed system?",
+      "triedOrSearched": "The supplied family only gives examples, not a classification; general channels need not admit the same single-clock reduction.",
+      "estimatedCost": "new general dynamical-systems research",
+      "cheap": false,
+      "decision": "OPEN",
+      "reasonOpen": "No justified reduction for all models is available.",
+      "whyNotClosedNow": "Cannot infer a universal bound from this construction."
+    }
+  ],
+  "extensionScout": {
+    "by": "Codex research/revision lead, with separate AI proof check",
+    "date": "2026-10-20",
+    "proposals": ["Exact aggregate logarithmic rate", "Near-critical bottleneck refinement"],
+    "actions": ["Proved Corollary 8 and obtained a separate read-only proof check", "Did not add a standard bottleneck calculation as a new contribution"]
+  }
+}

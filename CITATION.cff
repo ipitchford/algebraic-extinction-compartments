@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite the manuscript and preserve its candidate status and scope."
+title: "Algebraic extinction in acyclic compartment models"
+authors:
+  - name: Anonymous
+version: "1.0.0-candidate"
+doi: "10.5281/zenodo.23501636"
+repository-code: "https://github.com/ipitchford/algebraic-extinction-compartments"
+date-released: "2026-10-20"
+type: article
+license: CC0-1.0
+keywords:
+  - compartment models
+  - algebraic extinction
+  - acyclic graphs
+  - positive systems
+  - spectral bound

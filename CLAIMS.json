@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1.0",
+  "title": "Algebraic extinction in acyclic compartment models",
+  "version": "1.1",
+  "creator": "Anonymous",
+  "status": "unrefereed-candidate",
+  "claims": [
+    {"id": "AE-1", "locator": "paper.md Theorem 1", "statement": "A specified positive four-state conservative quadratic model satisfies the two source graph hypotheses and has I(t) asymptotic to 18/t^2 and integrated activity log 2.", "evidenceClass": "written-analytic-proof", "finiteReplay": "verify.py m=2"},
+    {"id": "AE-2", "locator": "paper.md Theorem 2 and Corollary 3", "statement": "For every integer m>=2 an admissible m+2-state model has exact algebraic exponent m/(m-1); no uniform extra power beyond one holds across all dimensions.", "evidenceClass": "written-analytic-proof", "finiteReplay": "verify.py m=2,...,25 only"},
+    {"id": "AE-3", "locator": "paper.md Lemma 4 and Theorem 5", "statement": "Under both graph hypotheses and strictly positive initial fractions, at most three states imply exponential bounds for all vanishing coordinates.", "evidenceClass": "written-analytic-proof", "finiteReplay": null},
+    {"id": "AE-4", "locator": "paper.md Theorem 6", "statement": "The specified four-state tensor has the stated complete discriminant classification of extinction and persistence.", "evidenceClass": "written-analytic-proof", "finiteReplay": "verify.py phase_checks; three examples"},
+    {"id": "AE-5", "locator": "paper.md Theorem 7", "statement": "Along a strictly positive trajectory in a transition DAG with nonempty vanishing set, all vanishing coordinates are exponentially bounded iff their limiting transverse Jacobian is Hurwitz.", "evidenceClass": "written-analytic-proof", "finiteReplay": null},
+    {"id": "AE-6", "locator": "paper.md Corollary 8", "statement": "The aggregate vanishing l1 norm has logarithmic rate s(A); the full-state distance has the same rate when s(A)<0.", "evidenceClass": "written-analytic-proof-with-internal-AI-check", "finiteReplay": null}
+  ],
+  "exclusions": ["external human peer review", "proof-assistant formal verification", "generic algebraic extinction", "empirical epidemic validation", "historical-priority certification", "coordinatewise rate classification"]
+}

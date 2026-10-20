@@ -1,0 +1,10 @@
+Exact replay: Python 3.14.7, standard library only, macOS, 20 October 2026.
+Normal child: python3 -B verify.py --output NORMAL_REPORT.json
+Optimized child: python3 -B -O verify.py --output OPTIMIZED_REPORT.json
+Child optimization flags are checked and recorded by test_verifier.py.
+No network, stochastic seed or third-party Python package is required for replay.
+
+Figure: retained from the supplied research package, generated from make_figure.py.
+Optional regeneration requires NumPy, SciPy and Matplotlib.
+Its numeric rendering is illustrative and is not an exact-arithmetic proof.
+The source package did not bind a complete plotting-environment lockfile.

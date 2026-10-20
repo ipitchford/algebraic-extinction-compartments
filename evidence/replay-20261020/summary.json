@@ -1,0 +1,60 @@
+{
+  "status": "PASS",
+  "positive_runs": 2,
+  "negative_controls_rejected": 6,
+  "verifier_sha256": "e01738cea4e43e16c5a015cac7a582065f0efde37b4b9fed2bcf108b7afce017",
+  "harness_sha256": "c5e7b6582028be62c36e902f583825799fc84b221158dc2375559ca7fbee9f8e",
+  "scope": "Finite exact identities and checker sensitivity, not formal verification.",
+  "results": [
+    {
+      "mode": "normal",
+      "case": "unaltered",
+      "returncode": 0,
+      "receipt": "normal.json",
+      "receipt_sha256": "ad7b774220640af47a1a6563451f650f7185f4634ff99540274222042f26afdf"
+    },
+    {
+      "mode": "normal",
+      "case": "incorrect_initial_scale",
+      "returncode": 1,
+      "rejected_by": "ValueError: initial fractions"
+    },
+    {
+      "mode": "normal",
+      "case": "missing_channel",
+      "returncode": 1,
+      "rejected_by": "ValueError: trajectory residual"
+    },
+    {
+      "mode": "normal",
+      "case": "incorrect_removed_flux",
+      "returncode": 1,
+      "rejected_by": "ValueError: phase residual"
+    },
+    {
+      "mode": "optimized",
+      "case": "unaltered",
+      "returncode": 0,
+      "receipt": "optimized.json",
+      "receipt_sha256": "7fa50d549ee70fe12f4d40f6ce8c5db34958149f7cc893ed14c9175168fadcbe"
+    },
+    {
+      "mode": "optimized",
+      "case": "incorrect_initial_scale",
+      "returncode": 1,
+      "rejected_by": "ValueError: initial fractions"
+    },
+    {
+      "mode": "optimized",
+      "case": "missing_channel",
+      "returncode": 1,
+      "rejected_by": "ValueError: trajectory residual"
+    },
+    {
+      "mode": "optimized",
+      "case": "incorrect_removed_flux",
+      "returncode": 1,
+      "rejected_by": "ValueError: phase residual"
+    }
+  ]
+}

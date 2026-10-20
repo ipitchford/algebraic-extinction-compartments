@@ -1,0 +1,328 @@
+{
+  "status": "PASS",
+  "arithmetic": "fractions.Fraction; exact polynomial coefficients",
+  "m_range": [
+    2,
+    25
+  ],
+  "instances_checked": 24,
+  "checks": [
+    "channel conservation",
+    "exact trajectory against channel-generated ODE",
+    "strictly positive normalised initial data",
+    "exact limiting fractions",
+    "transition acyclicity",
+    "dependency-cycle persistent-successor condition",
+    "internal-clock integral identity",
+    "three phase regimes"
+  ],
+  "small_fingerprints": [
+    {
+      "m": 2,
+      "states": 4,
+      "kappa": "1/18",
+      "exponent": "2",
+      "initial": [
+        "2/9",
+        "2/9",
+        "1/18",
+        "1/2"
+      ],
+      "limit": [
+        "1/9",
+        "1/18",
+        "0",
+        "5/6"
+      ],
+      "channels": [
+        [
+          0,
+          2,
+          2,
+          "1"
+        ],
+        [
+          1,
+          2,
+          3,
+          "2"
+        ],
+        [
+          2,
+          1,
+          3,
+          "2"
+        ]
+      ],
+      "transition_edges": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "dependency_edges": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "protected_vertices": [
+        2
+      ],
+      "all_polynomial_residuals_zero": true
+    },
+    {
+      "m": 3,
+      "states": 5,
+      "kappa": "1/54",
+      "exponent": "3/2",
+      "initial": [
+        "1/9",
+        "2/9",
+        "4/27",
+        "1/54",
+        "1/2"
+      ],
+      "limit": [
+        "1/18",
+        "1/18",
+        "1/54",
+        "0",
+        "47/54"
+      ],
+      "channels": [
+        [
+          0,
+          3,
+          4,
+          "1"
+        ],
+        [
+          3,
+          0,
+          4,
+          "1"
+        ],
+        [
+          1,
+          3,
+          3,
+          "2"
+        ],
+        [
+          2,
+          3,
+          4,
+          "3"
+        ],
+        [
+          3,
+          2,
+          4,
+          "3"
+        ]
+      ],
+      "transition_edges": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "dependency_edges": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "protected_vertices": [
+        3
+      ],
+      "all_polynomial_residuals_zero": true
+    },
+    {
+      "m": 4,
+      "states": 6,
+      "kappa": "1/162",
+      "exponent": "4/3",
+      "initial": [
+        "4/81",
+        "4/27",
+        "16/81",
+        "8/81",
+        "1/162",
+        "1/2"
+      ],
+      "limit": [
+        "2/81",
+        "1/27",
+        "2/81",
+        "1/162",
+        "0",
+        "49/54"
+      ],
+      "channels": [
+        [
+          0,
+          4,
+          4,
+          "1"
+        ],
+        [
+          1,
+          4,
+          5,
+          "2"
+        ],
+        [
+          4,
+          1,
+          5,
+          "2"
+        ],
+        [
+          2,
+          4,
+          4,
+          "3"
+        ],
+        [
+          3,
+          4,
+          5,
+          "4"
+        ],
+        [
+          4,
+          3,
+          5,
+          "4"
+        ]
+      ],
+      "transition_edges": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "dependency_edges": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "protected_vertices": [
+        4
+      ],
+      "all_polynomial_residuals_zero": true
+    }
+  ],
+  "phase_checks": [
+    {
+      "I0": "1/36",
+      "R0": "19/36",
+      "K": "1/36",
+      "discriminant": "2/81",
+      "regime": "exponential extinction",
+      "all_polynomial_residuals_zero": true
+    },
+    {
+      "I0": "1/18",
+      "R0": "1/2",
+      "K": "1/18",
+      "discriminant": "0",
+      "regime": "critical algebraic extinction",
+      "all_polynomial_residuals_zero": true
+    },
+    {
+      "I0": "1/12",
+      "R0": "17/36",
+      "K": "1/12",
+      "discriminant": "-2/81",
+      "regime": "persistent activity",
+      "all_polynomial_residuals_zero": true
+    }
+  ],
+  "scope": "Finite replay checks do not replace the arbitrary-m analytic proof or the N<=3 proof.",
+  "python_optimization": 0,
+  "verifier_sha256": "e01738cea4e43e16c5a015cac7a582065f0efde37b4b9fed2bcf108b7afce017"
+}

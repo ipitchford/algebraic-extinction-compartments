@@ -1,0 +1,16 @@
+{
+  "title": "Algebraic extinction in acyclic compartment models",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "creators": [{"name": "Anonymous"}],
+  "description": "Unrefereed candidate research note. A positive four-state conservative quadratic model disproves a specified exponential-decay conjecture; the paper proves minimum compartment count, an arbitrary-multiplicity family, an exact phase boundary and a trajectory-dependent spectral criterion with aggregate logarithmic rate. Complete written proofs and finite exact replay are provided. No external human peer review, formal verification, empirical validation or historical-priority certification is claimed.",
+  "version": "1.0.0-candidate",
+  "doi": "10.5281/zenodo.23501636",
+  "related_identifiers": [
+    {"identifier": "https://github.com/ipitchford/algebraic-extinction-compartments", "relation": "isSupplementTo", "scheme": "url"}
+  ],
+  "publication_date": "2026-10-20",
+  "access_right": "open",
+  "license": "cc-zero",
+  "keywords": ["compartment models", "algebraic extinction", "acyclic graphs", "positive systems", "spectral bound"]
+}
